@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: page title (shows in the browser tab) -->
+  <title>Custom CPAP Tubing Bracket | HNL Engineering</title>
+  <meta name="description" content="A structural bracket I designed in FreeCAD and 3D printed in PLA to secure and route CPAP tubing, eliminating tubing interference and making the equipment easier to use.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav solid">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">HNL</span>
+        <span>HNL Engineering<small>Hunter Little</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a class="active" href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../about.html">About &amp; Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- =====================================================
+         1. PROJECT HEADER: title, one-line summary, quick facts
+         ===================================================== -->
+    <section class="project-hero">
+      <div class="container">
+        <a class="back-link" href="../index.html#projects">← All projects</a>
+        <p class="placeholder-note">✏️ Real project, placeholder media. The text comes from your resume; the photos, video, 3D model, and anything marked "<mark class="todo">TODO</mark>" still need your input (see README.md, step 4).</p>
+        <span class="eyebrow">CAD · 3D Printing</span>
+        <h1>Custom CPAP Tubing Bracket</h1>
+        <p class="lead">A structural bracket I designed in FreeCAD and 3D printed in PLA to secure and route CPAP tubing, eliminating tubing interference and making the equipment easier to use.</p>
+        <!-- EDIT: quick facts. Add or remove <div> rows freely. -->
+        <div class="meta">
+          <div>Timeline<strong>March 2025</strong></div>
+          <div>My role<strong>Solo designer &amp; builder</strong></div>
+          <div>Tools<strong>FreeCAD, Creality printer, PLA</strong></div>
+          <div>Context<strong>Personal project</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- In-page menu. Each href="#..." must match a section id below. -->
+    <nav class="toc" aria-label="On this page">
+      <ul class="container">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#gallery">Photos</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#design">Design Choices</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+      </ul>
+    </nav>
+
+    <!-- =====================================================
+         2. OVERVIEW: the problem and your goal
+         ===================================================== -->
+    <section class="section" id="overview">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">Overview</span>
+          <h2>The problem</h2>
+                    <p>CPAP tubing tends to get in the way: it drapes, tangles, and pulls on the mask. I wanted a simple fixture that would hold the tube in a better position and route it out of the way.</p>
+          <p>I designed a structural bracket in FreeCAD, 3D printed it in PLA on a Creality printer, and installed it. It eliminated the tubing interference and made the setup easier to use day to day.</p>
+          <p><mark class="todo">TODO</mark>: one sentence on where the bracket mounts (headboard, nightstand, wall) and how it attaches.</p>
+        </div>
+        <div class="panel reveal reveal-delay-1">
+          <h3>Goals &amp; requirements</h3>
+          <!-- EDIT: one <li> per requirement -->
+<!-- EDIT: one <li> per requirement -->
+          <ul class="checklist">
+            <li>Hold the CPAP tube securely without pinching it</li>
+            <li>Route the tubing away from where it caused interference</li>
+            <li>Mount firmly to <mark class="todo">TODO</mark> (headboard / nightstand / wall)</li>
+            <li>Printable on a home Creality printer in PLA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         3. PHOTO GALLERY: click a photo to open it full-screen
+         To add a photo: copy one <button>...</button> block and change the src, alt, and caption.
+         ===================================================== -->
+    <section class="section section--tight" id="gallery">
+      <div class="container">
+        <span class="eyebrow">Gallery</span>
+        <h2>Photos</h2>
+        <p class="lead">Click any photo to enlarge it. Use the arrow keys to flip through.</p>
+        <div class="gallery reveal" style="margin-top:28px">
+          <button><img src="../assets/images/project2-1.jpg" alt="Placeholder photo 1" loading="lazy"><figcaption>Placeholder caption: early sketch or concept</figcaption></button>
+          <button><img src="../assets/images/project2-2.jpg" alt="Placeholder photo 2" loading="lazy"><figcaption>Placeholder caption: CAD assembly</figcaption></button>
+          <button><img src="../assets/images/project2-3.jpg" alt="Placeholder photo 3" loading="lazy"><figcaption>Placeholder caption: building the prototype</figcaption></button>
+          <button><img src="../assets/images/project2-4.jpg" alt="Placeholder photo 4" loading="lazy"><figcaption>Placeholder caption: final part during testing</figcaption></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         4. VIDEO
+         Option A (recommended): YouTube. Upload as "Unlisted", click Share → Embed,
+           and paste the video's ID into the iframe below, replacing the <video> tag.
+         Option B: a small .mp4 file in assets/videos/ (keep it under ~50 MB).
+         ===================================================== -->
+    <section class="section section--tight" id="video">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">In action</span>
+          <h2>See it work</h2>
+          <!-- EDIT: describe what the video shows -->
+          <p>Placeholder. A 20–30 second clip showing the bracket installed and the tube moving freely would show the improvement clearly.</p>
+          <p>A before/after photo pair in the gallery is also very effective for this project.</p>
+        </div>
+        <div class="video-wrap reveal reveal-delay-1">
+          <!-- OPTION A: YouTube. Delete the <video> below and un-comment this line, then swap YOUR_VIDEO_ID:
+          <iframe src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          -->
+          <!-- OPTION B: your own .mp4 file -->
+          <video controls muted playsinline preload="metadata" poster="../assets/images/project2-2.jpg">
+            <source src="../assets/videos/placeholder-demo.mp4" type="video/mp4">
+            Your browser can't play this video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         5. INTERACTIVE 3D MODEL
+         Export your CAD as .glb (see README, step 5), put it in assets/models/,
+         and change the src="" below.
+         ===================================================== -->
+    <section class="section section--tight" id="model">
+      <div class="container">
+        <span class="eyebrow">Interactive CAD</span>
+        <h2>Explore the 3D model</h2>
+        <p class="lead">Drag to rotate, scroll or pinch to zoom, and right-click-drag (or two-finger drag) to pan.</p>
+        <div class="viewer reveal" style="margin-top:28px">
+          <model-viewer src="../assets/models/placeholder-gears.glb"
+            alt="Interactive 3D model of the project"
+            camera-controls auto-rotate rotation-per-second="20deg"
+            camera-orbit="35deg 65deg auto"
+            shadow-intensity="1" exposure="1.05" environment-image="neutral"
+            interaction-prompt="auto" touch-action="pan-y"></model-viewer>
+          <div class="viewer-controls">
+            <button data-action="spin">Auto-rotate: on</button>
+            <button data-action="reset">Reset view</button>
+          </div>
+          <span class="viewer-hint">Placeholder model · export your FreeCAD bracket as .glb to show it here</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         6. DESIGN CHOICES: the most important section for recruiters.
+         For each decision: what you chose, what else you considered, and WHY.
+         Copy a <div class="decision"> block to add more.
+         ===================================================== -->
+    <section class="section" id="design">
+      <div class="container">
+        <span class="eyebrow">Engineering decisions</span>
+        <h2>Design choices</h2>
+        <p class="lead">The key decisions I made, the alternatives I weighed, and why I picked what I did.</p>
+        <div class="decisions" style="margin-top:30px">
+                    <div class="decision reveal">
+            <div class="num">01</div>
+            <div>
+              <h3>FreeCAD for the design</h3>
+              <p>Modeled the bracket in FreeCAD.</p>
+              <p class="why"><strong>Why:</strong> <mark class="todo">TODO</mark>: why FreeCAD (free and parametric, so dimensions could be tweaked after test fits)?</p>
+            </div>
+          </div>
+          <div class="decision reveal">
+            <div class="num">02</div>
+            <div>
+              <h3>PLA on an FDM printer</h3>
+              <p>Printed in PLA on a Creality printer.</p>
+              <p class="why"><strong>Why:</strong> PLA is easy to print accurately and stiff enough for a light-load bracket. <mark class="todo">TODO</mark>: mention print orientation, infill, or wall count if you chose them for strength.</p>
+            </div>
+          </div>
+          <div class="decision reveal">
+            <div class="num">03</div>
+            <div>
+              <h3>Bracket geometry and mounting</h3>
+              <p><mark class="todo">TODO</mark>: describe the shape (clip, hook, channel) and how it attaches.</p>
+              <p class="why"><strong>Why:</strong> <mark class="todo">TODO</mark>: what did you measure first, and did you go through more than one version? Iterations are great to show.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         7. CAPABILITIES: what it can do, with numbers if you have them
+         ===================================================== -->
+    <section class="section section--tight" id="capabilities">
+      <div class="container two-col">
+        <div class="panel reveal">
+          <span class="eyebrow">Specs</span>
+          <h3>Performance</h3>
+          <!-- EDIT: replace with your real measurements. Numbers are impressive. -->
+          <table class="specs">
+                        <tr><th>Material</th><td>PLA</td></tr>
+            <tr><th>Printer</th><td>Creality (<mark class="todo">TODO</mark>: model)</td></tr>
+            <tr><th>Print time</th><td><mark class="todo">TODO</mark></td></tr>
+            <tr><th>Iterations</th><td><mark class="todo">TODO</mark></td></tr>
+          </table>
+        </div>
+        <div class="panel reveal reveal-delay-1">
+          <span class="eyebrow">Capabilities</span>
+          <h3>What it can do</h3>
+          <ul class="checklist">
+                        <li>Secures and routes CPAP tubing</li>
+            <li>Eliminated tubing interference</li>
+            <li>Improved ease of use</li>
+            <li>Has been in daily use since March 2025 (<mark class="todo">TODO</mark>: confirm)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         8. LESSONS LEARNED: shows growth, which employers value
+         ===================================================== -->
+    <section class="section section--tight" id="lessons">
+      <div class="container">
+        <div class="panel reveal">
+          <span class="eyebrow">Reflection</span>
+          <h2>What I learned</h2>
+                    <p><mark class="todo">TODO</mark>: what you'd change in version 2, and anything you learned about designing for 3D printing (tolerances, overhangs, layer direction).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Previous / next navigation -->
+    <section class="section section--tight">
+      <div class="container next-project">
+        <a class="btn btn-outline" href="../index.html#projects">← All projects</a>
+        <a class="btn btn-primary" href="smart-lighting.html">Next project →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year></span> Hunter Little · HNL Engineering</span>
+      <div class="footer-links">
+        <a href="../about.html#contact">Contact</a>
+        <a href="../assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <!-- EDIT: add your LinkedIn: <a href="https://www.linkedin.com/in/YOUR-NAME" target="_blank" rel="noopener">LinkedIn</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About &amp; Resume | HNL Engineering</title>
+  <meta name="description" content="About Hunter Little, mechanical engineering student at NC State. Resume, skills, and contact information.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav solid">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">HNL</span>
+        <span>HNL Engineering<small>Hunter Little</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a class="active" href="about.html">About &amp; Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="project-hero">
+      <div class="container">
+        <span class="eyebrow">About me</span>
+        <h1>Hi, I'm Hunter.</h1>
+        <p class="lead">Mechanical engineering student at NC State (4.0 GPA) and SolarPack team member who likes taking an idea all the way from CAD to a working part.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noopener">View resume (PDF)</a>
+          <a class="btn btn-ghost" href="assets/resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="placeholder-note">✏️ The photo is a placeholder, and the "My story" paragraphs are a starting draft in your voice. Edit them to sound like you (see README.md, step 6).</p>
+        <div class="about-grid">
+          <!-- EDIT: replace assets/images/headshot.jpg with your photo (square works best) -->
+          <img class="reveal" src="assets/images/headshot.jpg" alt="Photo of Hunter Little">
+          <div class="reveal reveal-delay-1">
+            <h2>My story</h2>
+            <!-- EDIT: 2–3 short paragraphs about you -->
+            <p>I'm a mechanical engineering student at NC State with a 4.0 GPA, expected to graduate in 2029. I like projects where I get to design something in CAD and then build it with my own hands.</p>
+            <p>I'm a member of NC State SolarPack, where I work on the Structures and Business teams of a student-built, street-legal solar car that competes in the Formula Sun Grand Prix. I've helped design the car's high-voltage battery box, updated its structural models in SolidWorks, and spot welded battery modules. Outside the team I design and build my own projects, from a 3D-printed bracket to a whole-home smart lighting system.</p>
+            <p>I'm looking for a mechanical engineering internship where I can design, build, and test real hardware. <mark class="todo">TODO</mark> add the season (for example, summer 2027) and any areas you're most interested in.</p>
+
+            <h3 style="margin-top:36px">Skills</h3>
+            <!-- EDIT: one <span> per skill -->
+            <div class="pill-list">
+              <span>SolidWorks</span><span>FreeCAD</span><span>Spot welding</span><span>Soldering</span>
+              <span>3D printing (Creality, PLA)</span><span>Custom enclosure design</span>
+              <span>High-voltage battery packs</span><span>Circuit integration</span><span>Raspberry Pi 5</span><span>Homebridge</span>
+              <span>Multimeters</span><span>Oscilloscopes</span><span>Power supplies</span><span>Error &amp; uncertainty analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">Education</span>
+          <h2>Education</h2>
+          <!-- EDIT: your school details -->
+          <ul class="timeline">
+            <li>
+              <div class="when">Expected graduation: 2029</div>
+              <h3>B.S. Mechanical Engineering</h3>
+              <p>North Carolina State University · Raleigh, NC<br>GPA: 4.0 / 4.0</p>
+            </li>
+          </ul>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <span class="eyebrow">Experience</span>
+          <h2>Experience</h2>
+          <!-- EDIT: copy an <li> block for each job, club, or team -->
+          <ul class="timeline">
+            <li>
+              <div class="when">Nov 2026 – Present</div>
+              <h3>NC State SolarPack, Structures &amp; Business Teams</h3>
+              <p>Helped design the high-voltage battery box and select firewall materials to meet safety standards. Updated structural SolidWorks models to match the current vehicle. Spot welded nickel and copper strips to assemble series-wired high-voltage modules. Pursue corporate sponsorships to fund the build. <a href="projects/solarpack-battery.html">See project →</a></p>
+            </li>
+            <li>
+              <div class="when">Dec 2025 – May 2026</div>
+              <h3>Physics Laboratory Coursework</h3>
+              <p>Set up, calibrated, and ran experiments on circuits, magnetic fields, waves, and optics using multimeters, oscilloscopes, and power supplies. Performed error analysis and compared results with theoretical models.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's talk</h2>
+          <p class="lead">I'm actively looking for internships and always happy to talk engineering. The fastest way to reach me is email.</p>
+        </div>
+        <!-- EDIT: put your real email and links here.
+             Tip: use a school or professional email, not a personal one you'd rather keep private. -->
+        <ul class="contact-list reveal reveal-delay-1">
+          <li><a href="mailto:hnlittle@ncsu.edu">✉️ <span>hnlittle@ncsu.edu</span></a></li>
+          <!-- EDIT: paste your LinkedIn URL here and un-comment this line
+          <li><a href="https://www.linkedin.com/in/YOUR-NAME" target="_blank" rel="noopener">💼 <span>LinkedIn</span></a></li> -->
+          <li><a href="https://github.com/hunterlittle-debug" target="_blank" rel="noopener">🐙 <span>GitHub</span></a></li>
+          <li><a href="assets/resume.pdf" target="_blank" rel="noopener">📄 <span>Resume (PDF)</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year></span> Hunter Little · HNL Engineering</span>
+      <div class="footer-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <!-- EDIT: add your LinkedIn: <a href="https://www.linkedin.com/in/YOUR-NAME" target="_blank" rel="noopener">LinkedIn</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: the title and description show up in Google results and link previews -->
+  <title>Hunter Little | HNL Engineering</title>
+  <meta name="description" content="Mechanical engineering portfolio of Hunter Little, NC State. CAD, prototyping, and hands-on design projects.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 3D model viewer (free, made by Google) -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">HNL</span>
+        <span>HNL Engineering<small>Hunter Little</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="about.html">About &amp; Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="eyebrow reveal">Mechanical Engineering · NC State</span>
+          <!-- EDIT: your headline -->
+          <h1 class="reveal reveal-delay-1">Designing things that <span>move, hold, and work.</span></h1>
+          <!-- EDIT: a 1–2 sentence intro about you -->
+          <p class="lead reveal reveal-delay-2">
+            I'm Hunter, a mechanical engineering student at NC State and a member of the SolarPack
+            solar car team. I turn ideas into CAD models, prototypes, and working hardware. Below are
+            the projects I'm proudest of, with the photos, videos, 3D models, and design decisions behind each one.
+          </p>
+          <div class="hero-actions reveal reveal-delay-3">
+            <a class="btn btn-primary" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="about.html">About &amp; resume</a>
+          </div>
+          <!-- EDIT: quick facts. Change or delete any of these. -->
+          <div class="hero-stats reveal reveal-delay-3">
+            <div><strong>4.0 GPA</strong>NC State</div>
+            <div><strong>Class of 2029</strong>Graduation</div>
+            <div><strong>SolarPack</strong>Solar car team</div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-2" aria-hidden="true">
+          <div class="ring"></div>
+          <!-- A spinning 3D model in the hero. Swap the src for one of your own .glb files. -->
+          <model-viewer src="assets/models/placeholder-gears.glb" auto-rotate rotation-per-second="18deg"
+            camera-orbit="30deg 65deg auto" disable-zoom interaction-prompt="none" camera-controls
+            shadow-intensity="0.6" exposure="1.1" environment-image="neutral" alt="Rotating 3D gear model"></model-viewer>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Selected work</span>
+            <h2>Projects</h2>
+            <p class="lead">Click any project for the full breakdown: what it does, how I designed it, and what I learned.</p>
+          </div>
+          <!-- Filter buttons. data-filter must match words in each card's data-category. -->
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="cad">CAD</button>
+            <button class="filter" data-filter="fabrication">Fabrication</button>
+            <button class="filter" data-filter="electronics">Electronics</button>
+          </div>
+        </div>
+
+        <p class="placeholder-note">✏️ The cover photos are placeholders. Upload real photos to assets/images/ and update each card (see README.md, step 3).</p>
+
+        <div class="grid">
+          <!-- ===== PROJECT CARD 1 (copy this whole <a>...</a> block to add another project) ===== -->
+          <a class="card reveal" href="projects/solarpack-battery.html" data-category="cad fabrication electronics">
+            <div class="card-media"><img src="assets/images/project1-1.jpg" alt="NC State SolarPack battery box" loading="lazy"></div>
+            <div class="card-body">
+              <div class="tags"><span class="tag">SolidWorks</span><span class="tag">High voltage</span><span class="tag">Team</span></div>
+              <h3>SolarPack: High-Voltage Battery Box</h3>
+              <p>Designing the battery enclosure and assembling series-wired modules for NC State's street-legal solar car, built for the Formula Sun Grand Prix.</p>
+              <span class="card-link">View project</span>
+            </div>
+          </a>
+
+          <!-- ===== PROJECT CARD 2 ===== -->
+          <a class="card reveal reveal-delay-1" href="projects/cpap-bracket.html" data-category="cad fabrication">
+            <div class="card-media"><img src="assets/images/project2-1.jpg" alt="Custom CPAP tubing bracket" loading="lazy"></div>
+            <div class="card-body">
+              <div class="tags"><span class="tag">FreeCAD</span><span class="tag">3D Printing</span><span class="tag">PLA</span></div>
+              <h3>Custom CPAP Tubing Bracket</h3>
+              <p>A structural bracket designed in FreeCAD and printed in PLA that secures and routes CPAP tubing, eliminating interference.</p>
+              <span class="card-link">View project</span>
+            </div>
+          </a>
+
+          <!-- ===== PROJECT CARD 3 ===== -->
+          <a class="card reveal reveal-delay-2" href="projects/smart-lighting.html" data-category="electronics">
+            <div class="card-media"><img src="assets/images/project3-1.jpg" alt="Smart lighting system controller" loading="lazy"></div>
+            <div class="card-body">
+              <div class="tags"><span class="tag">Raspberry Pi 5</span><span class="tag">Homebridge</span><span class="tag">Soldering</span></div>
+              <h3>Full-Home Smart Lighting System</h3>
+              <p>Whole-home lighting automation run by a Raspberry Pi 5 on Homebridge, controlled by Apple HomePod and iOS devices.</p>
+              <span class="card-link">View project</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--tight" id="skills">
+      <div class="container">
+        <span class="eyebrow">Toolbox</span>
+        <h2>What I work with</h2>
+        <!-- EDIT: swap these for your real skills -->
+        <div class="skills" style="margin-top:30px">
+          <div class="skill reveal"><div class="icon">📐</div><h3>CAD &amp; 3D Modeling</h3><p>SolidWorks, FreeCAD</p></div>
+          <div class="skill reveal reveal-delay-1"><div class="icon">🛠️</div><h3>Fabrication</h3><p>Spot welding, soldering, 3D printing (Creality, PLA), custom enclosure design</p></div>
+          <div class="skill reveal reveal-delay-2"><div class="icon">⚡</div><h3>Electrical &amp; Embedded</h3><p>High-voltage battery packs (series configuration), circuit integration, Raspberry Pi 5, Homebridge</p></div>
+          <div class="skill reveal reveal-delay-3"><div class="icon">🔬</div><h3>Lab &amp; Testing</h3><p>Multimeters, oscilloscopes, power supplies, experimental setup, error and uncertainty analysis</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <span class="eyebrow">Open to opportunities</span>
+          <h2>Looking for a summer internship</h2>
+          <p>I'm seeking mechanical engineering internships where I can design, build, and test real hardware. I'd love to talk.</p>
+          <a class="btn btn-primary" href="about.html#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year></span> Hunter Little · HNL Engineering</span>
+      <div class="footer-links">
+        <a href="about.html#contact">Contact</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <!-- EDIT: add your LinkedIn: <a href="https://www.linkedin.com/in/YOUR-NAME" target="_blank" rel="noopener">LinkedIn</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

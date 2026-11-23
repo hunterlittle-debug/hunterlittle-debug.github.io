@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: page title (shows in the browser tab) -->
+  <title>Full-Home Smart Lighting System | HNL Engineering</title>
+  <meta name="description" content="A whole-home lighting automation system run by a Raspberry Pi 5 on Homebridge, integrated with Apple HomePod and iOS devices. I soldered and mounted all of the electronic modules and controllers.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav solid">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">HNL</span>
+        <span>HNL Engineering<small>Hunter Little</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a class="active" href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../about.html">About &amp; Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- =====================================================
+         1. PROJECT HEADER: title, one-line summary, quick facts
+         ===================================================== -->
+    <section class="project-hero">
+      <div class="container">
+        <a class="back-link" href="../index.html#projects">← All projects</a>
+        <p class="placeholder-note">✏️ Real project, placeholder media. The text comes from your resume; the photos, video, 3D model, and anything marked "<mark class="todo">TODO</mark>" still need your input (see README.md, step 4).</p>
+        <span class="eyebrow">Electronics · Embedded systems</span>
+        <h1>Full-Home Smart Lighting System</h1>
+        <p class="lead">A whole-home lighting automation system run by a Raspberry Pi 5 on Homebridge, integrated with Apple HomePod and iOS devices. I soldered and mounted all of the electronic modules and controllers.</p>
+        <!-- EDIT: quick facts. Add or remove <div> rows freely. -->
+        <div class="meta">
+          <div>Timeline<strong>February 2026</strong></div>
+          <div>My role<strong>Designer &amp; installer</strong></div>
+          <div>Tools<strong>Raspberry Pi 5, Homebridge, soldering</strong></div>
+          <div>Context<strong>Personal project</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- In-page menu. Each href="#..." must match a section id below. -->
+    <nav class="toc" aria-label="On this page">
+      <ul class="container">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#gallery">Photos</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#design">Design Choices</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+      </ul>
+    </nav>
+
+    <!-- =====================================================
+         2. OVERVIEW: the problem and your goal
+         ===================================================== -->
+    <section class="section" id="overview">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">Overview</span>
+          <h2>The problem</h2>
+                    <p>I wanted to control every light in the house from one place, by voice or phone, without paying for a closed commercial hub.</p>
+          <p>I designed and installed a whole-home lighting automation system run by a Raspberry Pi 5 on Homebridge, which lets the lights work with Apple HomePod and iOS devices. I soldered and mounted all the electronic modules and controllers myself.</p>
+          <p><mark class="todo">TODO</mark>: how many rooms or lights it controls, and which lights or modules you used.</p>
+        </div>
+        <div class="panel reveal reveal-delay-1">
+          <h3>Goals &amp; requirements</h3>
+          <!-- EDIT: one <li> per requirement -->
+<!-- EDIT: one <li> per requirement -->
+          <ul class="checklist">
+            <li>Control lighting across the whole home from one system</li>
+            <li>Work with Apple HomePod (voice) and iOS devices</li>
+            <li>Run on a Raspberry Pi 5 using Homebridge</li>
+            <li>Neatly mounted, soldered electronics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         3. PHOTO GALLERY: click a photo to open it full-screen
+         To add a photo: copy one <button>...</button> block and change the src, alt, and caption.
+         ===================================================== -->
+    <section class="section section--tight" id="gallery">
+      <div class="container">
+        <span class="eyebrow">Gallery</span>
+        <h2>Photos</h2>
+        <p class="lead">Click any photo to enlarge it. Use the arrow keys to flip through.</p>
+        <div class="gallery reveal" style="margin-top:28px">
+          <button><img src="../assets/images/project3-1.jpg" alt="Placeholder photo 1" loading="lazy"><figcaption>Placeholder caption: early sketch or concept</figcaption></button>
+          <button><img src="../assets/images/project3-2.jpg" alt="Placeholder photo 2" loading="lazy"><figcaption>Placeholder caption: CAD assembly</figcaption></button>
+          <button><img src="../assets/images/project3-3.jpg" alt="Placeholder photo 3" loading="lazy"><figcaption>Placeholder caption: building the prototype</figcaption></button>
+          <button><img src="../assets/images/project3-4.jpg" alt="Placeholder photo 4" loading="lazy"><figcaption>Placeholder caption: final part during testing</figcaption></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         4. VIDEO
+         Option A (recommended): YouTube. Upload as "Unlisted", click Share → Embed,
+           and paste the video's ID into the iframe below, replacing the <video> tag.
+         Option B: a small .mp4 file in assets/videos/ (keep it under ~50 MB).
+         ===================================================== -->
+    <section class="section section--tight" id="video">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">In action</span>
+          <h2>See it work</h2>
+          <!-- EDIT: describe what the video shows -->
+          <p>Placeholder. A short clip asking HomePod to turn on a room, then showing the lights respond, makes this project click instantly for a viewer.</p>
+        </div>
+        <div class="video-wrap reveal reveal-delay-1">
+          <!-- OPTION A: YouTube. Delete the <video> below and un-comment this line, then swap YOUR_VIDEO_ID:
+          <iframe src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          -->
+          <!-- OPTION B: your own .mp4 file -->
+          <video controls muted playsinline preload="metadata" poster="../assets/images/project3-2.jpg">
+            <source src="../assets/videos/placeholder-demo.mp4" type="video/mp4">
+            Your browser can't play this video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         5. INTERACTIVE 3D MODEL
+         Export your CAD as .glb (see README, step 5), put it in assets/models/,
+         and change the src="" below.
+         ===================================================== -->
+    <section class="section section--tight" id="model">
+      <div class="container">
+        <span class="eyebrow">Interactive CAD</span>
+        <h2>Explore the 3D model</h2>
+        <p class="lead">Drag to rotate, scroll or pinch to zoom, and right-click-drag (or two-finger drag) to pan.</p>
+        <div class="viewer reveal" style="margin-top:28px">
+          <model-viewer src="../assets/models/placeholder-gears.glb"
+            alt="Interactive 3D model of the project"
+            camera-controls auto-rotate rotation-per-second="20deg"
+            camera-orbit="35deg 65deg auto"
+            shadow-intensity="1" exposure="1.05" environment-image="neutral"
+            interaction-prompt="auto" touch-action="pan-y"></model-viewer>
+          <div class="viewer-controls">
+            <button data-action="spin">Auto-rotate: on</button>
+            <button data-action="reset">Reset view</button>
+          </div>
+          <span class="viewer-hint">Placeholder model · a model of a custom enclosure or mount would fit here</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         6. DESIGN CHOICES: the most important section for recruiters.
+         For each decision: what you chose, what else you considered, and WHY.
+         Copy a <div class="decision"> block to add more.
+         ===================================================== -->
+    <section class="section" id="design">
+      <div class="container">
+        <span class="eyebrow">Engineering decisions</span>
+        <h2>Design choices</h2>
+        <p class="lead">The key decisions I made, the alternatives I weighed, and why I picked what I did.</p>
+        <div class="decisions" style="margin-top:30px">
+                    <div class="decision reveal">
+            <div class="num">01</div>
+            <div>
+              <h3>Raspberry Pi 5 + Homebridge as the hub</h3>
+              <p>Used a Raspberry Pi 5 running Homebridge instead of a commercial smart-home hub.</p>
+              <p class="why"><strong>Why:</strong> Homebridge bridges non-HomeKit devices into Apple Home, so the system works with HomePod and iOS. <mark class="todo">TODO</mark>: add your reasons (cost, flexibility, learning).</p>
+            </div>
+          </div>
+          <div class="decision reveal">
+            <div class="num">02</div>
+            <div>
+              <h3>Soldered, mounted modules</h3>
+              <p>Soldered and mounted all electronic modules and controllers.</p>
+              <p class="why"><strong>Why:</strong> <mark class="todo">TODO</mark>: why soldered joints over breadboards or connectors (reliability for a permanent install?), and how you mounted them.</p>
+            </div>
+          </div>
+          <div class="decision reveal">
+            <div class="num">03</div>
+            <div>
+              <h3><mark class="todo">TODO</mark>: a third decision</h3>
+              <p>For example, how you laid out the wiring or chose the light controllers.</p>
+              <p class="why"><strong>Why:</strong> <mark class="todo">TODO</mark>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         7. CAPABILITIES: what it can do, with numbers if you have them
+         ===================================================== -->
+    <section class="section section--tight" id="capabilities">
+      <div class="container two-col">
+        <div class="panel reveal">
+          <span class="eyebrow">Specs</span>
+          <h3>Performance</h3>
+          <!-- EDIT: replace with your real measurements. Numbers are impressive. -->
+          <table class="specs">
+                        <tr><th>Hub</th><td>Raspberry Pi 5</td></tr>
+            <tr><th>Software</th><td>Homebridge</td></tr>
+            <tr><th>Integrations</th><td>Apple HomePod, iOS</td></tr>
+            <tr><th>Lights / rooms controlled</th><td><mark class="todo">TODO</mark></td></tr>
+          </table>
+        </div>
+        <div class="panel reveal reveal-delay-1">
+          <span class="eyebrow">Capabilities</span>
+          <h3>What it can do</h3>
+          <ul class="checklist">
+                        <li>Whole-home lighting control from one system</li>
+            <li>Voice control through Apple HomePod</li>
+            <li>Control from iPhone and other iOS devices</li>
+            <li><mark class="todo">TODO</mark>: automations or schedules it runs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         8. LESSONS LEARNED: shows growth, which employers value
+         ===================================================== -->
+    <section class="section section--tight" id="lessons">
+      <div class="container">
+        <div class="panel reveal">
+          <span class="eyebrow">Reflection</span>
+          <h2>What I learned</h2>
+                    <p><mark class="todo">TODO</mark>: what was hardest (networking, wiring, Homebridge plugins?) and how you solved it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Previous / next navigation -->
+    <section class="section section--tight">
+      <div class="container next-project">
+        <a class="btn btn-outline" href="../index.html#projects">← All projects</a>
+        <a class="btn btn-primary" href="solarpack-battery.html">Next project →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year></span> Hunter Little · HNL Engineering</span>
+      <div class="footer-links">
+        <a href="../about.html#contact">Contact</a>
+        <a href="../assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <!-- EDIT: add your LinkedIn: <a href="https://www.linkedin.com/in/YOUR-NAME" target="_blank" rel="noopener">LinkedIn</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
