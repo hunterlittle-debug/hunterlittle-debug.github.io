@@ -20,7 +20,6 @@ css/style.css              All the styling (colors are at the very top)
 js/main.js                 Animations, photo lightbox, menu (you rarely need to touch this)
 assets/
   images/                  Photos (.jpg / .png)
-  videos/                  Short .mp4 clips (optional, YouTube is usually better)
   models/                  3D models (.glb)
   resume.pdf               Your resume
   favicon.svg              The little icon in the browser tab
@@ -31,7 +30,7 @@ Two kinds of reminders are built into the pages:
 - A **dashed orange box** (`class="placeholder-note"`) means something on that page is still a placeholder. Delete the box once the page has your real content.
 - A small yellow **TODO** tag (`<mark class="todo">TODO</mark>` in the code) marks a spot that needs a detail only you know. Replace the tag and the text after it with your answer.
 
-The project text was written from your resume. Photos, videos, and 3D models are placeholders until you add your own.
+The project text was written from your resume and your answers. Pictures are your own photos and renders of your CAD files.
 
 ---
 
@@ -70,13 +69,12 @@ Open one of the files in `projects/` (or copy `project-template.html` to a new n
 1. **Header**: title, one-line summary, quick facts (timeline, role, tools)
 2. **Overview**: the problem and your requirements
 3. **Photos**: click-to-enlarge gallery
-4. **Video**
-5. **3D model**: interactive CAD viewer
-6. **Design choices**: what you chose, the alternatives, and *why* (recruiters care most about this one)
-7. **Capabilities**: specs and test results, with numbers when you have them
-8. **What I learned**
+4. **3D model**: interactive CAD viewer
+5. **Design choices**: what you chose, the alternatives, and *why* (recruiters care most about this one)
+6. **Capabilities**: specs and test results, with numbers when you have them
+7. **What I learned**
 
-You don't need every section. If a project has no video, delete everything from `<section ... id="video">` to its matching `</section>`, and remove the `Video` link from the menu near the top of the page.
+You don't need every section. To remove a section (for example, the 3D model on a project with no CAD file), delete everything from `<section ... id="model">` to its matching `</section>`, and remove its link from the menu near the top of the page.
 
 ### Photos
 
@@ -84,15 +82,19 @@ You don't need every section. If a project has no video, delete everything from 
 2. **Shrink them first.** Phone photos are 3–8 MB, which makes the page slow. Aim for about 1600 px wide and under 500 KB. A free site like [squoosh.app](https://squoosh.app) does this in seconds.
 3. In the gallery, each photo is one `<button>...</button>` line. Change the `src`, the `alt` (a short description for screen readers), and the `<figcaption>` caption.
 
-### Video
+### Video (optional, not used right now)
 
-**Recommended: YouTube.** It's free, fast, and doesn't use up your repo's space.
+The project pages don't have video sections. If you want one later, upload the video to YouTube as **Unlisted**, copy its ID (the part after `v=` in the link), and paste this inside a project page where you want it:
 
-1. Upload your video to YouTube and set visibility to **Unlisted** (only people with the link can see it).
-2. Copy the video ID: in `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, the ID is the part after `v=`.
-3. In the project page's `VIDEO` section, delete the `<video> ... </video>` block, remove the `<!--` and `-->` around the `<iframe>` line, and replace `YOUR_VIDEO_ID` with your ID.
-
-**Alternative:** put a short `.mp4` in `assets/videos/` and change the `<source src="...">`. Keep it small (well under 50 MB; GitHub rejects files over 100 MB).
+```html
+<section class="section section--tight">
+  <div class="container">
+    <div class="video-wrap">
+      <iframe src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="Project video" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+```
 
 ### 3D CAD model
 
@@ -117,7 +119,7 @@ In `about.html`, replace the placeholder story, skills, education, and experienc
 
 ## Cleaning up placeholders
 
-When you're done, you can delete the placeholder files you no longer use, like `assets/images/project1-*.jpg`, `assets/videos/placeholder-demo.mp4`, and `assets/models/placeholder-gears.glb`. Just make sure no page still points to them.
+When you're done, you can delete the placeholder files you no longer use, like `assets/images/project1-*.jpg` and `assets/models/placeholder-gears.glb` (the blank template uses them, so update it too). Just make sure no page still points to them.
 
 ## If something looks broken
 

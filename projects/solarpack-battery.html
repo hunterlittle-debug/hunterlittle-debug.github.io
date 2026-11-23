@@ -38,7 +38,7 @@
     <section class="project-hero">
       <div class="container">
         <a class="back-link" href="../index.html#projects">← All projects</a>
-        <p class="placeholder-note">✏️ Photos and video are placeholders until you send them. The 3D model is a stand-in, since team designs may not be shareable.</p>
+        
         <span class="eyebrow">Team project · Structures</span>
         <h1>SolarPack: High-Voltage Battery Box</h1>
         <p class="lead">Helping design and build the high-voltage battery enclosure and modules for NC State SolarPack's street-legal solar car, built to race in the Formula Sun Grand Prix.</p>
@@ -47,7 +47,7 @@
           <div>Timeline<strong>Nov 2026 – Present</strong></div>
           <div>My role<strong>Structures &amp; Business team member</strong></div>
           <div>Tools<strong>SolidWorks, spot welder</strong></div>
-          <div>Context<strong>NC State SolarPack (FSGP)</strong></div>
+          <div>Context<strong><a href="https://www.solarpacknc.com/" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">NC State SolarPack</a> (FSGP)</strong></div>
         </div>
       </div>
     </section>
@@ -56,9 +56,6 @@
     <nav class="toc" aria-label="On this page">
       <ul class="container">
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#gallery">Photos</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#model">3D Model</a></li>
         <li><a href="#design">Design Choices</a></li>
         <li><a href="#capabilities">Capabilities</a></li>
         <li><a href="#lessons">Lessons</a></li>
@@ -73,7 +70,7 @@
         <div class="reveal">
           <span class="eyebrow">Overview</span>
           <h2>The problem</h2>
-                    <p>NC State SolarPack is a student team designing and building a street-legal, solar-powered car to compete in the Formula Sun Grand Prix (FSGP). The car's high-voltage battery pack has to be safely contained, so the battery box is one of the most safety-critical parts of the vehicle.</p>
+                    <p><a href="https://www.solarpacknc.com/" target="_blank" rel="noopener">NC State SolarPack</a> is a student team designing and building a street-legal, solar-powered car to compete in the Formula Sun Grand Prix (FSGP). The car's high-voltage battery pack has to be safely contained, so the battery box is one of the most safety-critical parts of the vehicle.</p>
           <p>On the Structures team I helped design that battery box, including choosing firewall materials that meet the competition's required safety standards. I also updated the team's outdated structural models in SolidWorks so they match the current vehicle design, and helped assemble the battery modules themselves.</p>
           <p>Right now the build is paused while parts arrive and the team heads into winter break. Work picks back up in the spring.</p>
         </div>
@@ -89,78 +86,6 @@
             <li>Protect the driver first: the box is designed to keep a fire or thermal event away from the cockpit, not to cool the cells</li>
             <li>Keep heat away from the car's sensitive electronics</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         3. PHOTO GALLERY: click a photo to open it full-screen
-         To add a photo: copy one <button>...</button> block and change the src, alt, and caption.
-         ===================================================== -->
-    <section class="section section--tight" id="gallery">
-      <div class="container">
-        <span class="eyebrow">Gallery</span>
-        <h2>Photos</h2>
-        <p class="lead">Click any photo to enlarge it. Use the arrow keys to flip through.</p>
-        <div class="gallery reveal" style="margin-top:28px">
-          <button><img src="../assets/images/project1-1.jpg" alt="Placeholder photo 1" loading="lazy"><figcaption>Placeholder caption: early sketch or concept</figcaption></button>
-          <button><img src="../assets/images/project1-2.jpg" alt="Placeholder photo 2" loading="lazy"><figcaption>Placeholder caption: CAD assembly</figcaption></button>
-          <button><img src="../assets/images/project1-3.jpg" alt="Placeholder photo 3" loading="lazy"><figcaption>Placeholder caption: building the prototype</figcaption></button>
-          <button><img src="../assets/images/project1-4.jpg" alt="Placeholder photo 4" loading="lazy"><figcaption>Placeholder caption: final part during testing</figcaption></button>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         4. VIDEO
-         Option A (recommended): YouTube. Upload as "Unlisted", click Share → Embed,
-           and paste the video's ID into the iframe below, replacing the <video> tag.
-         Option B: a small .mp4 file in assets/videos/ (keep it under ~50 MB).
-         ===================================================== -->
-    <section class="section section--tight" id="video">
-      <div class="container two-col">
-        <div class="reveal">
-          <span class="eyebrow">In action</span>
-          <h2>See it work</h2>
-          <!-- EDIT: describe what the video shows -->
-          <p>Placeholder. A short clip of the battery box, the spot-welding process, or the car itself would work well here.</p>
-          <p>Tip: check with the team before posting photos or video of unreleased designs.</p>
-        </div>
-        <div class="video-wrap reveal reveal-delay-1">
-          <!-- OPTION A: YouTube. Delete the <video> below and un-comment this line, then swap YOUR_VIDEO_ID:
-          <iframe src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          -->
-          <!-- OPTION B: your own .mp4 file -->
-          <video controls muted playsinline preload="metadata" poster="../assets/images/project1-2.jpg">
-            <source src="../assets/videos/placeholder-demo.mp4" type="video/mp4">
-            Your browser can't play this video.
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         5. INTERACTIVE 3D MODEL
-         Export your CAD as .glb (see README, step 5), put it in assets/models/,
-         and change the src="" below.
-         ===================================================== -->
-    <section class="section section--tight" id="model">
-      <div class="container">
-        <span class="eyebrow">Interactive CAD</span>
-        <h2>Explore the 3D model</h2>
-        <p class="lead">Drag to rotate, scroll or pinch to zoom, and right-click-drag (or two-finger drag) to pan.</p>
-        <div class="viewer reveal" style="margin-top:28px">
-          <model-viewer src="../assets/models/placeholder-gears.glb"
-            alt="Interactive 3D model of the project"
-            camera-controls auto-rotate rotation-per-second="20deg"
-            camera-orbit="35deg 65deg auto"
-            shadow-intensity="1" exposure="1.05" environment-image="neutral"
-            interaction-prompt="auto" touch-action="pan-y"></model-viewer>
-          <div class="viewer-controls">
-            <button data-action="spin">Auto-rotate: on</button>
-            <button data-action="reset">Reset view</button>
-          </div>
-          <span class="viewer-hint">Placeholder model · swap in a battery box .glb if the team allows it</span>
         </div>
       </div>
     </section>
