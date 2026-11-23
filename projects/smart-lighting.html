@@ -38,7 +38,7 @@
     <section class="project-hero">
       <div class="container">
         <a class="back-link" href="../index.html#projects">← All projects</a>
-        <p class="placeholder-note">✏️ The board and LED strip photos are real. The other two photos, the video, and the 3D model are placeholders until you send them.</p>
+        
         <span class="eyebrow">Electronics · Embedded systems</span>
         <h1>Full-Home Smart Lighting System</h1>
         <p class="lead">A whole-home lighting automation system run by a Raspberry Pi 5 on Homebridge, integrated with Apple HomePod and iOS devices. I soldered and mounted all of the electronic modules and controllers.</p>
@@ -57,8 +57,6 @@
       <ul class="container">
         <li><a href="#overview">Overview</a></li>
         <li><a href="#gallery">Photos</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#model">3D Model</a></li>
         <li><a href="#design">Design Choices</a></li>
         <li><a href="#capabilities">Capabilities</a></li>
         <li><a href="#lessons">Lessons</a></li>
@@ -75,7 +73,7 @@
           <h2>The problem</h2>
                     <p>I wanted to control every light in the house from one place, by voice or phone, without paying for a closed commercial hub.</p>
           <p>I designed and installed a whole-home lighting automation system run by a Raspberry Pi 5 on Homebridge, which lets the lights work with Apple HomePod and iOS devices. I soldered and mounted all the electronic modules and controllers myself.</p>
-          <p>It currently runs one room with 8 LED light strips, of WS2812B individually addressable LEDs, driven by an 8-port ESP32-based LED distribution board running WLED. A Raspberry Pi 5 runs Homebridge to control the WLED board, which brings the lights into Apple Home. It's built so more rooms can be added easily. All of the electronics are mounted inside a cabinet, with the wiring run through the drywall so nothing is visible.</p>
+          <p>It currently runs one room with 8 strips of WS2812B individually addressable LEDs, driven by an 8-port ESP32-based LED distribution board running WLED. A Raspberry Pi 5 runs Homebridge to control the WLED board, which brings the lights into Apple Home. It's built so more rooms can be added easily. All of the electronics are mounted inside a cabinet, with the wiring run through the drywall so nothing is visible.</p>
         </div>
         <div class="panel reveal reveal-delay-1">
           <h3>Goals &amp; requirements</h3>
@@ -104,61 +102,6 @@
         <div class="gallery reveal" style="margin-top:28px">
           <button><img src="../assets/images/lighting-led-board.jpg" alt="8-port ESP32 LED distribution board with green screw terminals and fuses" loading="lazy"><figcaption>The 8-port ESP32 LED distribution board running WLED, one port per light strip</figcaption></button>
           <button><img src="../assets/images/lighting-leds.jpg" alt="WS2812B addressable LED strip held up before installation" loading="lazy"><figcaption>One of the WS2812B individually addressable LED strips before installation</figcaption></button>
-          <button><img src="../assets/images/project3-3.jpg" alt="Placeholder photo 3" loading="lazy"><figcaption>Placeholder caption: building the prototype</figcaption></button>
-          <button><img src="../assets/images/project3-4.jpg" alt="Placeholder photo 4" loading="lazy"><figcaption>Placeholder caption: final part during testing</figcaption></button>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         4. VIDEO
-         Option A (recommended): YouTube. Upload as "Unlisted", click Share → Embed,
-           and paste the video's ID into the iframe below, replacing the <video> tag.
-         Option B: a small .mp4 file in assets/videos/ (keep it under ~50 MB).
-         ===================================================== -->
-    <section class="section section--tight" id="video">
-      <div class="container two-col">
-        <div class="reveal">
-          <span class="eyebrow">In action</span>
-          <h2>See it work</h2>
-          <!-- EDIT: describe what the video shows -->
-          <p>Placeholder. A short clip asking HomePod to turn on a room, then showing the lights respond, makes this project click instantly for a viewer.</p>
-        </div>
-        <div class="video-wrap reveal reveal-delay-1">
-          <!-- OPTION A: YouTube. Delete the <video> below and un-comment this line, then swap YOUR_VIDEO_ID:
-          <iframe src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          -->
-          <!-- OPTION B: your own .mp4 file -->
-          <video controls muted playsinline preload="metadata" poster="../assets/images/lighting-led-board.jpg">
-            <source src="../assets/videos/placeholder-demo.mp4" type="video/mp4">
-            Your browser can't play this video.
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         5. INTERACTIVE 3D MODEL
-         Export your CAD as .glb (see README, step 5), put it in assets/models/,
-         and change the src="" below.
-         ===================================================== -->
-    <section class="section section--tight" id="model">
-      <div class="container">
-        <span class="eyebrow">Interactive CAD</span>
-        <h2>Explore the 3D model</h2>
-        <p class="lead">Drag to rotate, scroll or pinch to zoom, and right-click-drag (or two-finger drag) to pan.</p>
-        <div class="viewer reveal" style="margin-top:28px">
-          <model-viewer src="../assets/models/placeholder-gears.glb"
-            alt="Interactive 3D model of the project"
-            camera-controls auto-rotate rotation-per-second="20deg"
-            camera-orbit="35deg 65deg auto"
-            shadow-intensity="1" exposure="1.05" environment-image="neutral"
-            interaction-prompt="auto" touch-action="pan-y"></model-viewer>
-          <div class="viewer-controls">
-            <button data-action="spin">Auto-rotate: on</button>
-            <button data-action="reset">Reset view</button>
-          </div>
-          <span class="viewer-hint">Placeholder model · a model of a custom enclosure or mount would fit here</span>
         </div>
       </div>
     </section>
