@@ -38,7 +38,7 @@
     <section class="project-hero">
       <div class="container">
         <a class="back-link" href="../index.html#projects">← All projects</a>
-        <p class="placeholder-note">✏️ Real project, placeholder media. The text comes from your resume; the photos, video, 3D model, and anything marked "<mark class="todo">TODO</mark>" still need your input (see README.md, step 4).</p>
+        <p class="placeholder-note">✏️ Photos and video are placeholders until you send them. The 3D model is a stand-in, since team designs may not be shareable.</p>
         <span class="eyebrow">Team project · Structures</span>
         <h1>SolarPack: High-Voltage Battery Box</h1>
         <p class="lead">Helping design and build the high-voltage battery enclosure and modules for NC State SolarPack's street-legal solar car, built to race in the Formula Sun Grand Prix.</p>
@@ -75,7 +75,7 @@
           <h2>The problem</h2>
                     <p>NC State SolarPack is a student team designing and building a street-legal, solar-powered car to compete in the Formula Sun Grand Prix (FSGP). The car's high-voltage battery pack has to be safely contained, so the battery box is one of the most safety-critical parts of the vehicle.</p>
           <p>On the Structures team I helped design that battery box, including choosing firewall materials that meet the competition's required safety standards. I also updated the team's outdated structural models in SolidWorks so they match the current vehicle design, and helped assemble the battery modules themselves.</p>
-          <p><mark class="todo">TODO</mark>: add a sentence on where the project stands now (for example, which parts are built and what's next).</p>
+          <p>Right now the build is paused while parts arrive and the team heads into winter break. Work picks back up in the spring.</p>
         </div>
         <div class="panel reveal reveal-delay-1">
           <h3>Goals &amp; requirements</h3>
@@ -83,10 +83,11 @@
 <!-- EDIT: one <li> per requirement -->
           <ul class="checklist">
             <li>Contain the high-voltage pack and isolate it from the driver with a compliant firewall</li>
-            <li>Meet the FSGP / American Solar Challenge safety regulations for battery enclosures</li>
+            <li>Meet the <a href="https://www.americansolarchallenge.org/formula-sun-grand-prix/2025-event-hub/registration-regulations/" target="_blank" rel="noopener">Formula Sun Grand Prix (FSGP) regulations</a> for battery enclosures</li>
             <li>Fit within the current vehicle structure (matching the updated SolidWorks models)</li>
             <li>Assemble cells into series-connected high-voltage modules</li>
-            <li><mark class="todo">TODO</mark>: any size, weight, or cooling targets the team set</li>
+            <li>Protect the driver first: the box is designed to keep a fire or thermal event away from the cockpit, not to cool the cells</li>
+            <li>Keep heat away from the car's sensitive electronics</li>
           </ul>
         </div>
       </div>
@@ -180,7 +181,7 @@
             <div>
               <h3>Firewall material selection</h3>
               <p>Selected firewall materials for the battery box to meet the required safety standards.</p>
-              <p class="why"><strong>Why:</strong> <mark class="todo">TODO</mark>: which materials did you compare, and what made the final choice win (fire rating, weight, cost, how easy it is to work with)? Name the specific rule it had to satisfy if you can.</p>
+              <p class="why"><strong>Why:</strong> We compared epoxies and resin layups with fire-retardant additives, then welding blankets, and landed on ceramic blankets sandwiched between outer layers (final layer materials still being decided). Ceramic blanket gave the best fire protection for the driver while still letting us meet the <a href="https://www.americansolarchallenge.org/formula-sun-grand-prix/2025-event-hub/registration-regulations/" target="_blank" rel="noopener">Formula Sun Grand Prix (FSGP) regulations</a>.</p>
             </div>
           </div>
           <div class="decision reveal">
@@ -188,7 +189,7 @@
             <div>
               <h3>Series module configuration</h3>
               <p>Cells are wired in series into high-voltage modules.</p>
-              <p class="why"><strong>Why:</strong> Series wiring adds up the cell voltages to reach the pack voltage the motor system needs. <mark class="todo">TODO</mark>: add the cell type, cells per module, and module voltage if the team is OK sharing them.</p>
+              <p class="why"><strong>Why:</strong> Wiring lithium-ion cells in series adds their voltages together, building up to the roughly 400 V pack the car's drive system runs on.</p>
             </div>
           </div>
           <div class="decision reveal">
@@ -196,7 +197,7 @@
             <div>
               <h3>Spot-welded nickel and copper strips</h3>
               <p>Joined cells with spot-welded nickel and copper strips instead of soldering.</p>
-              <p class="why"><strong>Why:</strong> Spot welding puts very little heat into the cell, which protects it, and makes strong, low-resistance joints. <mark class="todo">TODO</mark>: add why both nickel and copper were used (copper carries current better; nickel welds more easily).</p>
+              <p class="why"><strong>Why:</strong> Spot welding puts very little heat into the cell, which protects it, and makes strong, low-resistance joints that hold up to vibration on the road.</p>
             </div>
           </div>
         </div>
@@ -213,10 +214,10 @@
           <h3>Performance</h3>
           <!-- EDIT: replace with your real measurements. Numbers are impressive. -->
           <table class="specs">
-                        <tr><th>Pack configuration</th><td><mark class="todo">TODO</mark></td></tr>
-            <tr><th>Nominal pack voltage</th><td><mark class="todo">TODO</mark></td></tr>
-            <tr><th>Firewall material</th><td><mark class="todo">TODO</mark></td></tr>
-            <tr><th>Modules built (by me / team)</th><td><mark class="todo">TODO</mark></td></tr>
+                        <tr><th>Cells</th><td>Lithium-ion, wired in series</td></tr>
+            <tr><th>Pack voltage</th><td>~400 V</td></tr>
+            <tr><th>Firewall</th><td>Ceramic blanket sandwich</td></tr>
+            <tr><th>Design priority</th><td>Driver safety &gt; heat routing</td></tr>
           </table>
         </div>
         <div class="panel reveal reveal-delay-1">
@@ -240,7 +241,7 @@
         <div class="panel reveal">
           <span class="eyebrow">Reflection</span>
           <h2>What I learned</h2>
-                    <p><mark class="todo">TODO</mark>: what you learned working on a real competition vehicle, for example working within a rulebook, designing as part of a larger team, or high-voltage safety practices. On the Business team you also pursue corporate sponsorships; one sentence on that shows range.</p>
+                    <p>Working on a real competition car taught me how to step into creative roles when requirements change. Plans shifted and budgets were very tight, and we still had to meet the race regulations and get the job done. On the Business team I also reach out to companies for sponsorships, which has taught me how to explain our engineering to people outside the team.</p>
         </div>
       </div>
     </section>
@@ -260,7 +261,7 @@
       <div class="footer-links">
         <a href="../about.html#contact">Contact</a>
         <a href="../assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-        <!-- EDIT: add your LinkedIn: <a href="https://www.linkedin.com/in/YOUR-NAME" target="_blank" rel="noopener">LinkedIn</a> -->
+        <a href="https://www.linkedin.com/in/hunter-little-3082a5436" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </footer>
