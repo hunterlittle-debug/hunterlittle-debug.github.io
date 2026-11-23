@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- EDIT: page title (shows in the browser tab) -->
   <title>Custom CPAP Tubing Bracket | HNL Engineering</title>
-  <meta name="description" content="A structural bracket I designed in FreeCAD and 3D printed in PLA to secure and route CPAP tubing, eliminating tubing interference and making the equipment easier to use.">
+  <meta name="description" content="A hook-on bracket I designed in FreeCAD and 3D printed in PLA to hold and route CPAP tubing for a family member, eliminating tubing interference and making the machine easier to use.">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,10 +38,10 @@
     <section class="project-hero">
       <div class="container">
         <a class="back-link" href="../index.html#projects">← All projects</a>
-        <p class="placeholder-note">✏️ Real project, placeholder media. The text comes from your resume; the photos, video, 3D model, and anything marked "<mark class="todo">TODO</mark>" still need your input (see README.md, step 4).</p>
+        <p class="placeholder-note">✏️ The 3D model and CAD renders are from your real file. Photos of the bracket installed are still placeholders.</p>
         <span class="eyebrow">CAD · 3D Printing</span>
         <h1>Custom CPAP Tubing Bracket</h1>
-        <p class="lead">A structural bracket I designed in FreeCAD and 3D printed in PLA to secure and route CPAP tubing, eliminating tubing interference and making the equipment easier to use.</p>
+        <p class="lead">A hook-on bracket I designed in FreeCAD and 3D printed in PLA to hold and route CPAP tubing for a family member, eliminating tubing interference and making the machine easier to use.</p>
         <!-- EDIT: quick facts. Add or remove <div> rows freely. -->
         <div class="meta">
           <div>Timeline<strong>March 2025</strong></div>
@@ -73,18 +73,19 @@
         <div class="reveal">
           <span class="eyebrow">Overview</span>
           <h2>The problem</h2>
-                    <p>CPAP tubing tends to get in the way: it drapes, tangles, and pulls on the mask. I wanted a simple fixture that would hold the tube in a better position and route it out of the way.</p>
+                    <p>CPAP tubing tends to get in the way: it drapes, tangles, and pulls on the mask. A family member needed a simple fixture that would hold the tube in a better position and route it out of the way.</p>
           <p>I designed a structural bracket in FreeCAD, 3D printed it in PLA on a Creality printer, and installed it. It eliminated the tubing interference and made the setup easier to use day to day.</p>
-          <p><mark class="todo">TODO</mark>: one sentence on where the bracket mounts (headboard, nightstand, wall) and how it attaches.</p>
+          <p>The bracket hooks over the headboard, and a tubed channel on the other end holds the CPAP hose. It needs no tools or screws to install.</p>
         </div>
         <div class="panel reveal reveal-delay-1">
           <h3>Goals &amp; requirements</h3>
           <!-- EDIT: one <li> per requirement -->
 <!-- EDIT: one <li> per requirement -->
           <ul class="checklist">
-            <li>Hold the CPAP tube securely without pinching it</li>
+            <li>Match the channel radius to the CPAP hose</li>
             <li>Route the tubing away from where it caused interference</li>
-            <li>Mount firmly to <mark class="todo">TODO</mark> (headboard / nightstand / wall)</li>
+            <li>Hook securely onto the headboard with no tools or fasteners</li>
+            <li>Hold the hose without damaging the delicate tubing</li>
             <li>Printable on a home Creality printer in PLA</li>
           </ul>
         </div>
@@ -101,10 +102,10 @@
         <h2>Photos</h2>
         <p class="lead">Click any photo to enlarge it. Use the arrow keys to flip through.</p>
         <div class="gallery reveal" style="margin-top:28px">
-          <button><img src="../assets/images/project2-1.jpg" alt="Placeholder photo 1" loading="lazy"><figcaption>Placeholder caption: early sketch or concept</figcaption></button>
-          <button><img src="../assets/images/project2-2.jpg" alt="Placeholder photo 2" loading="lazy"><figcaption>Placeholder caption: CAD assembly</figcaption></button>
-          <button><img src="../assets/images/project2-3.jpg" alt="Placeholder photo 3" loading="lazy"><figcaption>Placeholder caption: building the prototype</figcaption></button>
-          <button><img src="../assets/images/project2-4.jpg" alt="Placeholder photo 4" loading="lazy"><figcaption>Placeholder caption: final part during testing</figcaption></button>
+          <button><img src="../assets/images/cpap-cad-1.jpg" alt="CAD render of the CPAP bracket" loading="lazy"><figcaption>CAD render: the headboard hook and hose channel</figcaption></button>
+          <button><img src="../assets/images/cpap-cad-2.jpg" alt="CAD render of the CPAP bracket, rear view" loading="lazy"><figcaption>CAD render: rear view</figcaption></button>
+          <button><img src="../assets/images/cpap-cad-3.jpg" alt="CAD render showing the tube channel" loading="lazy"><figcaption>CAD render: the tubed channel that holds the hose</figcaption></button>
+          <button><img src="../assets/images/project2-4.jpg" alt="Placeholder photo 4" loading="lazy"><figcaption>Placeholder: photo of the bracket installed on the headboard</figcaption></button>
         </div>
       </div>
     </section>
@@ -129,7 +130,7 @@
           <iframe src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           -->
           <!-- OPTION B: your own .mp4 file -->
-          <video controls muted playsinline preload="metadata" poster="../assets/images/project2-2.jpg">
+          <video controls muted playsinline preload="metadata" poster="../assets/images/cpap-cad-1.jpg">
             <source src="../assets/videos/placeholder-demo.mp4" type="video/mp4">
             Your browser can't play this video.
           </video>
@@ -148,17 +149,17 @@
         <h2>Explore the 3D model</h2>
         <p class="lead">Drag to rotate, scroll or pinch to zoom, and right-click-drag (or two-finger drag) to pan.</p>
         <div class="viewer reveal" style="margin-top:28px">
-          <model-viewer src="../assets/models/placeholder-gears.glb"
+          <model-viewer src="../assets/models/cpap-bracket.glb"
             alt="Interactive 3D model of the project"
             camera-controls auto-rotate rotation-per-second="20deg"
-            camera-orbit="35deg 65deg auto"
+            camera-orbit="35deg 70deg auto"
             shadow-intensity="1" exposure="1.05" environment-image="neutral"
             interaction-prompt="auto" touch-action="pan-y"></model-viewer>
           <div class="viewer-controls">
             <button data-action="spin">Auto-rotate: on</button>
             <button data-action="reset">Reset view</button>
           </div>
-          <span class="viewer-hint">Placeholder model · export your FreeCAD bracket as .glb to show it here</span>
+          <span class="viewer-hint">Actual FreeCAD model · drag to rotate</span>
         </div>
       </div>
     </section>
@@ -179,23 +180,23 @@
             <div>
               <h3>FreeCAD for the design</h3>
               <p>Modeled the bracket in FreeCAD.</p>
-              <p class="why"><strong>Why:</strong> <mark class="todo">TODO</mark>: why FreeCAD (free and parametric, so dimensions could be tweaked after test fits)?</p>
+              <p class="why"><strong>Why:</strong> I was on a tight budget, and FreeCAD was the free option. Learning it also taught me parametric modeling, so I could change a dimension and regenerate the part between test fits.</p>
             </div>
           </div>
           <div class="decision reveal">
             <div class="num">02</div>
             <div>
               <h3>PLA on an FDM printer</h3>
-              <p>Printed in PLA on a Creality printer.</p>
-              <p class="why"><strong>Why:</strong> PLA is easy to print accurately and stiff enough for a light-load bracket. <mark class="todo">TODO</mark>: mention print orientation, infill, or wall count if you chose them for strength.</p>
+              <p>Printed in PLA on a Creality Ender-3 Pro in about 2 hours.</p>
+              <p class="why"><strong>Why:</strong> PLA prints accurately and is stiff enough for a light-load bracket. The short print time made it practical to iterate quickly.</p>
             </div>
           </div>
           <div class="decision reveal">
             <div class="num">03</div>
             <div>
               <h3>Bracket geometry and mounting</h3>
-              <p><mark class="todo">TODO</mark>: describe the shape (clip, hook, channel) and how it attaches.</p>
-              <p class="why"><strong>Why:</strong> <mark class="todo">TODO</mark>: what did you measure first, and did you go through more than one version? Iterations are great to show.</p>
+              <p>A hook that grips the headboard on one end and a tubed channel that holds the hose on the other, refined over six versions.</p>
+              <p class="why"><strong>Why:</strong> Each version solved one problem: first getting a secure hold on the headboard, then matching the channel radius to the hose, then making sure it held the hose without damaging it. The last version was a thinner, lighter travel model.</p>
             </div>
           </div>
         </div>
@@ -213,9 +214,10 @@
           <!-- EDIT: replace with your real measurements. Numbers are impressive. -->
           <table class="specs">
                         <tr><th>Material</th><td>PLA</td></tr>
-            <tr><th>Printer</th><td>Creality (<mark class="todo">TODO</mark>: model)</td></tr>
-            <tr><th>Print time</th><td><mark class="todo">TODO</mark></td></tr>
-            <tr><th>Iterations</th><td><mark class="todo">TODO</mark></td></tr>
+            <tr><th>Printer</th><td>Creality Ender-3 Pro</td></tr>
+            <tr><th>Print time</th><td>~2 hours</td></tr>
+            <tr><th>Iterations</th><td>6 versions</td></tr>
+            <tr><th>Overall size</th><td>127 × 175 × 70 mm</td></tr>
           </table>
         </div>
         <div class="panel reveal reveal-delay-1">
@@ -225,7 +227,7 @@
                         <li>Secures and routes CPAP tubing</li>
             <li>Eliminated tubing interference</li>
             <li>Improved ease of use</li>
-            <li>Has been in daily use since March 2025 (<mark class="todo">TODO</mark>: confirm)</li>
+            <li>Includes a thinner travel version</li>
           </ul>
         </div>
       </div>
@@ -239,7 +241,7 @@
         <div class="panel reveal">
           <span class="eyebrow">Reflection</span>
           <h2>What I learned</h2>
-                    <p><mark class="todo">TODO</mark>: what you'd change in version 2, and anything you learned about designing for 3D printing (tolerances, overhangs, layer direction).</p>
+                    <p>Six versions taught me that good design comes from testing on the real thing. Each print showed me something a measurement alone didn't, like how tightly the hook needed to grip or how much clearance the soft tubing needed. It also showed me the value of designing for the user: the travel version came from thinking about how the bracket would really be used.</p>
         </div>
       </div>
     </section>
@@ -259,7 +261,7 @@
       <div class="footer-links">
         <a href="../about.html#contact">Contact</a>
         <a href="../assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-        <!-- EDIT: add your LinkedIn: <a href="https://www.linkedin.com/in/YOUR-NAME" target="_blank" rel="noopener">LinkedIn</a> -->
+        <a href="https://www.linkedin.com/in/hunter-little-3082a5436" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </footer>
