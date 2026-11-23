@@ -56,6 +56,7 @@
     <nav class="toc" aria-label="On this page">
       <ul class="container">
         <li><a href="#overview">Overview</a></li>
+        <li><a href="#gallery">Photos</a></li>
         <li><a href="#design">Design Choices</a></li>
         <li><a href="#capabilities">Capabilities</a></li>
         <li><a href="#lessons">Lessons</a></li>
@@ -91,6 +92,19 @@
     </section>
 
     <!-- =====================================================
+         PHOTOS: click to open full-screen. Copy a <button>...</button> line to add more.
+         ===================================================== -->
+    <section class="section section--tight" id="gallery">
+      <div class="container">
+        <span class="eyebrow">The car</span>
+        <h2>Photos</h2>
+        <div class="gallery reveal" style="margin-top:28px;grid-template-columns:1fr">
+          <button style="aspect-ratio:16/9"><img src="../assets/images/solarpack-car.jpg" alt="NC State SolarPack solar car number 99 at sunset" loading="lazy"><figcaption>NC State SolarPack's car at competition (photo: NC State SolarPack)</figcaption></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
          6. DESIGN CHOICES: the most important section for recruiters.
          For each decision: what you chose, what else you considered, and WHY.
          Copy a <div class="decision"> block to add more.
@@ -114,7 +128,7 @@
             <div>
               <h3>Series module configuration</h3>
               <p>Cells are wired in series into high-voltage modules.</p>
-              <p class="why"><strong>Why:</strong> Wiring lithium-ion cells in series adds their voltages together, building up to the roughly 400 V pack the car's drive system runs on.</p>
+              <p class="why"><strong>Why:</strong> Wiring lithium-ion cells in series adds their voltages together, building up to the 400 V pack the car's drive system runs on.</p>
             </div>
           </div>
           <div class="decision reveal">
@@ -140,7 +154,7 @@
           <!-- EDIT: replace with your real measurements. Numbers are impressive. -->
           <table class="specs">
                         <tr><th>Cells</th><td>Lithium-ion, wired in series</td></tr>
-            <tr><th>Pack voltage</th><td>~400 V</td></tr>
+            <tr><th>Pack voltage</th><td>400 V</td></tr>
             <tr><th>Firewall</th><td>Ceramic blanket sandwich</td></tr>
             <tr><th>Design priority</th><td>Driver safety &gt; heat routing</td></tr>
           </table>
