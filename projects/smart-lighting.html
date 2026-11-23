@@ -38,7 +38,7 @@
     <section class="project-hero">
       <div class="container">
         <a class="back-link" href="../index.html#projects">← All projects</a>
-        <p class="placeholder-note">✏️ The board photo is real. The other photos, the video, and the 3D model are placeholders until you send them.</p>
+        <p class="placeholder-note">✏️ The board and LED strip photos are real. The other two photos, the video, and the 3D model are placeholders until you send them.</p>
         <span class="eyebrow">Electronics · Embedded systems</span>
         <h1>Full-Home Smart Lighting System</h1>
         <p class="lead">A whole-home lighting automation system run by a Raspberry Pi 5 on Homebridge, integrated with Apple HomePod and iOS devices. I soldered and mounted all of the electronic modules and controllers.</p>
@@ -75,7 +75,7 @@
           <h2>The problem</h2>
                     <p>I wanted to control every light in the house from one place, by voice or phone, without paying for a closed commercial hub.</p>
           <p>I designed and installed a whole-home lighting automation system run by a Raspberry Pi 5 on Homebridge, which lets the lights work with Apple HomePod and iOS devices. I soldered and mounted all the electronic modules and controllers myself.</p>
-          <p>It currently runs one room with 8 LED light strips, driven by an 8-port ESP32-based LED distribution board running WLED. A Raspberry Pi 5 runs Homebridge to control the WLED board, which brings the lights into Apple Home. It's built so more rooms can be added easily. All of the electronics are mounted inside a cabinet, with the wiring run through the drywall so nothing is visible.</p>
+          <p>It currently runs one room with 8 LED light strips, of WS2812B individually addressable LEDs, driven by an 8-port ESP32-based LED distribution board running WLED. A Raspberry Pi 5 runs Homebridge to control the WLED board, which brings the lights into Apple Home. It's built so more rooms can be added easily. All of the electronics are mounted inside a cabinet, with the wiring run through the drywall so nothing is visible.</p>
         </div>
         <div class="panel reveal reveal-delay-1">
           <h3>Goals &amp; requirements</h3>
@@ -103,7 +103,7 @@
         <p class="lead">Click any photo to enlarge it. Use the arrow keys to flip through.</p>
         <div class="gallery reveal" style="margin-top:28px">
           <button><img src="../assets/images/lighting-led-board.jpg" alt="8-port ESP32 LED distribution board with green screw terminals and fuses" loading="lazy"><figcaption>The 8-port ESP32 LED distribution board running WLED, one port per light strip</figcaption></button>
-          <button><img src="../assets/images/project3-2.jpg" alt="Placeholder photo 2" loading="lazy"><figcaption>Placeholder caption: CAD assembly</figcaption></button>
+          <button><img src="../assets/images/lighting-leds.jpg" alt="WS2812B addressable LED strip held up before installation" loading="lazy"><figcaption>One of the WS2812B individually addressable LED strips before installation</figcaption></button>
           <button><img src="../assets/images/project3-3.jpg" alt="Placeholder photo 3" loading="lazy"><figcaption>Placeholder caption: building the prototype</figcaption></button>
           <button><img src="../assets/images/project3-4.jpg" alt="Placeholder photo 4" loading="lazy"><figcaption>Placeholder caption: final part during testing</figcaption></button>
         </div>
@@ -215,6 +215,7 @@
                         <tr><th>Hub</th><td>Raspberry Pi 5</td></tr>
             <tr><th>Software</th><td>Homebridge, WLED</td></tr>
             <tr><th>LED controller</th><td>8-port ESP32 distro board</td></tr>
+            <tr><th>LED strips</th><td>WS2812B, individually addressable</td></tr>
             <tr><th>Integrations</th><td>Apple HomePod, iOS</td></tr>
             <tr><th>Coverage</th><td>1 room, 8 LED strips (expandable)</td></tr>
             <tr><th>Install</th><td>Cabinet-mounted, in-wall wiring</td></tr>
