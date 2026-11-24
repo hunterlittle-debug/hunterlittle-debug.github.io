@@ -41,7 +41,7 @@
         
         <span class="eyebrow">Electronics · Embedded systems</span>
         <h1>Expandable Home Lighting System</h1>
-        <p class="lead">An expandable home lighting automation system run by a Raspberry Pi 5 on Homebridge, integrated with Apple HomePod and iOS devices. I soldered and mounted all of the electronic modules and controllers.</p>
+        <p class="lead">LED lighting for my home that I can control from HomePod or my phone, built so I can add more rooms later.</p>
         <!-- EDIT: quick facts. Add or remove <div> rows freely. -->
         <div class="meta">
           <div>Timeline<strong>February 2026</strong></div>
@@ -70,21 +70,21 @@
       <div class="container two-col">
         <div class="reveal">
           <span class="eyebrow">Overview</span>
-          <h2>The problem</h2>
-                    <p>I wanted to control the lights in my home from one place, by voice or phone, without paying for a closed commercial hub.</p>
-          <p>I designed and installed an expandable home lighting automation system run by a Raspberry Pi 5 on Homebridge, which lets the lights work with Apple HomePod and iOS devices. I soldered and mounted all the electronic modules and controllers myself.</p>
-          <p>It currently runs one room with 8 strips of WS2812B individually addressable LEDs, driven by an 8-port ESP32-based LED distribution board running WLED. A Raspberry Pi 5 runs Homebridge to control the WLED board, which brings the lights into Apple Home. It's built so more rooms can be added easily. All of the electronics are mounted inside a cabinet, with the wiring run through the drywall so nothing is visible.</p>
+          <h2>The project</h2>
+                    <p>I wanted LED lighting in my home that I could control with my voice or my phone, and I wanted to build it myself.</p>
+          <p>Right now it runs one room with 8 strips of WS2812B LEDs. The strips plug into an 8-port ESP32 board running WLED. A Raspberry Pi 5 runs Homebridge, which controls the WLED board and connects everything to Apple Home, so it works with HomePod and my iPhone.</p>
+          <p>I soldered and mounted all the electronics myself. Everything is inside a cabinet and the wires run through the drywall, so you can't see any of it. It's easy to add more rooms later.</p>
         </div>
         <div class="panel reveal reveal-delay-1">
-          <h3>Goals &amp; requirements</h3>
+          <h3>What it had to do</h3>
           <!-- EDIT: one <li> per requirement -->
 <!-- EDIT: one <li> per requirement -->
           <ul class="checklist">
-            <li>Control the home's lighting from one system, starting with one room</li>
-            <li>Work with Apple HomePod (voice) and iOS devices</li>
-            <li>Run on a Raspberry Pi 5 using Homebridge</li>
-            <li>Hide all electronics and wiring for a clean install</li>
-            <li>Easy to expand to more rooms later</li>
+            <li>Control the lights from one system, starting with one room</li>
+            <li>Work with HomePod and my iPhone</li>
+            <li>Run on my Raspberry Pi 5 with Homebridge</li>
+            <li>Hide all the electronics and wires</li>
+            <li>Be easy to add more rooms to</li>
           </ul>
         </div>
       </div>
@@ -98,10 +98,10 @@
       <div class="container">
         <span class="eyebrow">Gallery</span>
         <h2>Photos</h2>
-        <p class="lead">Click any photo to enlarge it. Use the arrow keys to flip through.</p>
+        <p class="lead">Click a photo to see it bigger.</p>
         <div class="gallery reveal" style="margin-top:28px">
-          <button><img src="../assets/images/lighting-led-board.jpg" alt="8-port ESP32 LED distribution board with green screw terminals and fuses" loading="lazy"><figcaption>The 8-port ESP32 LED distribution board running WLED, one port per light strip</figcaption></button>
-          <button><img src="../assets/images/lighting-leds.jpg" alt="WS2812B addressable LED strip held up before installation" loading="lazy"><figcaption>One of the WS2812B individually addressable LED strips before installation</figcaption></button>
+          <button><img src="../assets/images/lighting-led-board.jpg" alt="8-port ESP32 LED distribution board with green screw terminals and fuses" loading="lazy"><figcaption>The ESP32 board running WLED. Each of the 8 ports runs one LED strip</figcaption></button>
+          <button><img src="../assets/images/lighting-leds.jpg" alt="WS2812B addressable LED strip held up before installation" loading="lazy"><figcaption>One of the WS2812B LED strips before I installed it</figcaption></button>
         </div>
       </div>
     </section>
@@ -113,32 +113,32 @@
          ===================================================== -->
     <section class="section" id="design">
       <div class="container">
-        <span class="eyebrow">Engineering decisions</span>
+        <span class="eyebrow">Decisions</span>
         <h2>Design choices</h2>
-        <p class="lead">The key decisions I made, the alternatives I weighed, and why I picked what I did.</p>
+        <p class="lead">The main calls I made and why.</p>
         <div class="decisions" style="margin-top:30px">
                     <div class="decision reveal">
             <div class="num">01</div>
             <div>
-              <h3>Raspberry Pi 5 + Homebridge as the hub</h3>
-              <p>Used a Raspberry Pi 5 running Homebridge instead of a commercial smart-home hub.</p>
-              <p class="why"><strong>Why:</strong> Homebridge bridges non-HomeKit devices into Apple Home, so the system works with HomePod and iOS. Building it myself meant I understood exactly how it worked, so I could copy it to more rooms and fix it if anything breaks.</p>
+              <h3>Building it myself with a Pi and Homebridge</h3>
+              <p>I set up a Raspberry Pi 5 running Homebridge to control everything.</p>
+              <p class="why"><strong>Why:</strong> Homebridge lets the lights show up in Apple Home. And because I built it myself, I know how it all works, so I can copy it to more rooms and fix it if something breaks.</p>
             </div>
           </div>
           <div class="decision reveal">
             <div class="num">02</div>
             <div>
-              <h3>Soldered, mounted modules</h3>
-              <p>Soldered and mounted all electronic modules and controllers.</p>
-              <p class="why"><strong>Why:</strong> Soldered joints are more reliable than breadboards or loose connectors for a permanent install. I mounted everything inside a cabinet to hide the electronics and ran the wiring through the drywall.</p>
+              <h3>Hiding the electronics</h3>
+              <p>I soldered all the modules and controllers and mounted them inside a cabinet.</p>
+              <p class="why"><strong>Why:</strong> I didn't want any electronics or wires showing, so the boards went in the cabinet and the wiring went through the drywall.</p>
             </div>
           </div>
           <div class="decision reveal">
             <div class="num">03</div>
             <div>
-              <h3>Automation with HomeKit</h3>
-              <p>Set up a HomeKit automation that turns the lights on and off based on the time of day.</p>
-              <p class="why"><strong>Why:</strong> Using Apple's built-in automations meant no extra software to maintain, and the schedule can be changed from a phone in seconds.</p>
+              <h3>Running on a schedule</h3>
+              <p>I set up a HomeKit automation that turns the lights on and off depending on the time.</p>
+              <p class="why"><strong>Why:</strong> So the lights turn on and off by themselves.</p>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@
       <div class="container two-col">
         <div class="panel reveal">
           <span class="eyebrow">Specs</span>
-          <h3>Performance</h3>
+          <h3>The numbers</h3>
           <!-- EDIT: replace with your real measurements. Numbers are impressive. -->
           <table class="specs">
                         <tr><th>Hub</th><td>Raspberry Pi 5</td></tr>
@@ -161,18 +161,18 @@
             <tr><th>LED strips</th><td>WS2812B, individually addressable</td></tr>
             <tr><th>Integrations</th><td>Apple HomePod, iOS</td></tr>
             <tr><th>Coverage</th><td>1 room, 8 LED strips (expandable)</td></tr>
-            <tr><th>Install</th><td>Cabinet-mounted, in-wall wiring</td></tr>
+            <tr><th>Install</th><td>In a cabinet, wires in the wall</td></tr>
           </table>
         </div>
         <div class="panel reveal reveal-delay-1">
           <span class="eyebrow">Capabilities</span>
           <h3>What it can do</h3>
           <ul class="checklist">
-                        <li>Lighting control from one system, ready to expand room by room</li>
-            <li>Voice control through Apple HomePod</li>
-            <li>Control from iPhone and other iOS devices</li>
-            <li>Turns on and off automatically on a schedule</li>
-            <li>Designed to expand to more rooms</li>
+                        <li>Controls all 8 strips from one system</li>
+            <li>Voice control through HomePod</li>
+            <li>Control from my iPhone</li>
+            <li>Turns on and off on its own based on the time</li>
+            <li>Can be expanded to more rooms</li>
           </ul>
         </div>
       </div>
@@ -186,7 +186,7 @@
         <div class="panel reveal">
           <span class="eyebrow">Reflection</span>
           <h2>What I learned</h2>
-                    <p>Building the system myself instead of buying a finished product meant I had to understand every part of it: the software, the wiring, and the install. That understanding is what makes it easy to expand and repair now.</p>
+                    <p>Building it myself meant I had to figure out every part, from the software to the wiring to the install. Now that I understand how it works, adding a room or fixing something isn't a big deal.</p>
         </div>
       </div>
     </section>

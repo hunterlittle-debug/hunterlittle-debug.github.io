@@ -41,7 +41,7 @@
         
         <span class="eyebrow">CAD · 3D Printing</span>
         <h1>Custom CPAP Tubing Bracket</h1>
-        <p class="lead">A hook-on bracket I designed in FreeCAD and 3D printed in PLA to hold and route CPAP tubing for a family member, eliminating tubing interference and making the machine easier to use.</p>
+        <p class="lead">A bracket I designed and 3D printed to keep a family member's CPAP tubing out of the way.</p>
         <!-- EDIT: quick facts. Add or remove <div> rows freely. -->
         <div class="meta">
           <div>Timeline<strong>March 2025</strong></div>
@@ -71,21 +71,21 @@
       <div class="container two-col">
         <div class="reveal">
           <span class="eyebrow">Overview</span>
-          <h2>The problem</h2>
-                    <p>CPAP tubing tends to get in the way: it drapes, tangles, and pulls on the mask. A family member needed a simple fixture that would hold the tube in a better position and route it out of the way.</p>
-          <p>I designed a structural bracket in FreeCAD, 3D printed it in PLA on a Creality printer, and installed it. It eliminated the tubing interference and made the setup easier to use day to day.</p>
-          <p>The bracket hooks over the headboard, and a tubed channel on the other end holds the CPAP hose. It needs no tools or screws to install.</p>
+          <h2>The project</h2>
+                    <p>A family member uses a CPAP machine, and the tubing kept getting in the way. I wanted to make something that would hold the tube up and out of the way.</p>
+          <p>I designed a bracket in FreeCAD and printed it in PLA on my Creality printer. Once it was installed, the tubing stopped getting in the way and the machine was easier to use.</p>
+          <p>One end hooks over the headboard and the other end has a channel that the hose sits in. No tools or screws needed.</p>
         </div>
         <div class="panel reveal reveal-delay-1">
-          <h3>Goals &amp; requirements</h3>
+          <h3>What it had to do</h3>
           <!-- EDIT: one <li> per requirement -->
 <!-- EDIT: one <li> per requirement -->
           <ul class="checklist">
-            <li>Match the channel radius to the CPAP hose</li>
-            <li>Route the tubing away from where it caused interference</li>
-            <li>Hook securely onto the headboard with no tools or fasteners</li>
-            <li>Hold the hose without damaging the delicate tubing</li>
-            <li>Printable on a home Creality printer in PLA</li>
+            <li>Fit the hose snugly</li>
+            <li>Keep the tubing out of the way</li>
+            <li>Hang on the headboard without tools or screws</li>
+            <li>Not damage the tubing, which is pretty delicate</li>
+            <li>Print on my Creality printer in PLA</li>
           </ul>
         </div>
       </div>
@@ -99,11 +99,11 @@
       <div class="container">
         <span class="eyebrow">Gallery</span>
         <h2>Photos</h2>
-        <p class="lead">Click any photo to enlarge it. Use the arrow keys to flip through.</p>
+        <p class="lead">Click a photo to see it bigger.</p>
         <div class="gallery reveal" style="margin-top:28px">
-          <button><img src="../assets/images/cpap-cad-1.jpg" alt="CAD render of the CPAP bracket" loading="lazy"><figcaption>CAD render: the headboard hook and hose channel</figcaption></button>
-          <button><img src="../assets/images/cpap-cad-2.jpg" alt="CAD render of the CPAP bracket, rear view" loading="lazy"><figcaption>CAD render: rear view</figcaption></button>
-          <button><img src="../assets/images/cpap-cad-3.jpg" alt="CAD render showing the tube channel" loading="lazy"><figcaption>CAD render: the tubed channel that holds the hose</figcaption></button>
+          <button><img src="../assets/images/cpap-cad-1.jpg" alt="CAD render of the CPAP bracket" loading="lazy"><figcaption>The hook and the hose channel</figcaption></button>
+          <button><img src="../assets/images/cpap-cad-2.jpg" alt="CAD render of the CPAP bracket, rear view" loading="lazy"><figcaption>From the back</figcaption></button>
+          <button><img src="../assets/images/cpap-cad-3.jpg" alt="CAD render showing the tube channel" loading="lazy"><figcaption>The channel the hose sits in</figcaption></button>
         </div>
       </div>
     </section>
@@ -115,9 +115,9 @@
          ===================================================== -->
     <section class="section section--tight" id="model">
       <div class="container">
-        <span class="eyebrow">Interactive CAD</span>
-        <h2>Explore the 3D model</h2>
-        <p class="lead">Drag to rotate, scroll or pinch to zoom, and right-click-drag (or two-finger drag) to pan.</p>
+        <span class="eyebrow">3D model</span>
+        <h2>Spin the model</h2>
+        <p class="lead">This is my actual CAD file. Drag to spin it and scroll to zoom.</p>
         <div class="viewer reveal" style="margin-top:28px">
           <model-viewer src="../assets/models/cpap-bracket.glb"
             alt="Interactive 3D model of the project"
@@ -129,7 +129,7 @@
             <button data-action="spin">Auto-rotate: on</button>
             <button data-action="reset">Reset view</button>
           </div>
-          <span class="viewer-hint">Actual FreeCAD model · drag to rotate</span>
+          <span class="viewer-hint">Drag to rotate</span>
         </div>
       </div>
     </section>
@@ -141,32 +141,32 @@
          ===================================================== -->
     <section class="section" id="design">
       <div class="container">
-        <span class="eyebrow">Engineering decisions</span>
+        <span class="eyebrow">Decisions</span>
         <h2>Design choices</h2>
-        <p class="lead">The key decisions I made, the alternatives I weighed, and why I picked what I did.</p>
+        <p class="lead">The main calls I made and why.</p>
         <div class="decisions" style="margin-top:30px">
                     <div class="decision reveal">
             <div class="num">01</div>
             <div>
-              <h3>FreeCAD for the design</h3>
-              <p>Modeled the bracket in FreeCAD.</p>
-              <p class="why"><strong>Why:</strong> I was on a tight budget, and FreeCAD was the free option. Learning it also taught me parametric modeling, so I could change a dimension and regenerate the part between test fits.</p>
+              <h3>Why FreeCAD</h3>
+              <p>I modeled the whole thing in FreeCAD.</p>
+              <p class="why"><strong>Why:</strong> Honestly, it was the only free option and I was on a budget.</p>
             </div>
           </div>
           <div class="decision reveal">
             <div class="num">02</div>
             <div>
-              <h3>PLA on an FDM printer</h3>
-              <p>Printed in PLA on a Creality Ender-3 Pro in about 2 hours.</p>
-              <p class="why"><strong>Why:</strong> PLA prints accurately and is stiff enough for a light-load bracket. The short print time made it practical to iterate quickly.</p>
+              <h3>Printing it</h3>
+              <p>I printed it in PLA on my Creality Ender-3 Pro. Each print took about 2 hours.</p>
+              <p class="why"><strong>Why:</strong> I already had the printer and PLA, and at 2 hours a print I could try a new version the same day.</p>
             </div>
           </div>
           <div class="decision reveal">
             <div class="num">03</div>
             <div>
-              <h3>Bracket geometry and mounting</h3>
-              <p>A hook that grips the headboard on one end and a tubed channel that holds the hose on the other, refined over six versions.</p>
-              <p class="why"><strong>Why:</strong> Each version solved one problem: first getting a secure hold on the headboard, then matching the channel radius to the hose, then making sure it held the hose without damaging it. The last version was a thinner, lighter travel model.</p>
+              <h3>Six versions</h3>
+              <p>It took six tries to get it right.</p>
+              <p class="why"><strong>Why:</strong> Each version fixed one thing. First I had to get it to hold onto the headboard. Then I matched the channel to the size of the hose. Then I made sure it held the hose without damaging it. The last one was a thinner version for travel.</p>
             </div>
           </div>
         </div>
@@ -180,12 +180,12 @@
       <div class="container two-col">
         <div class="panel reveal">
           <span class="eyebrow">Specs</span>
-          <h3>Performance</h3>
+          <h3>The numbers</h3>
           <!-- EDIT: replace with your real measurements. Numbers are impressive. -->
           <table class="specs">
                         <tr><th>Material</th><td>PLA</td></tr>
             <tr><th>Printer</th><td>Creality Ender-3 Pro</td></tr>
-            <tr><th>Print time</th><td>~2 hours</td></tr>
+            <tr><th>Print time</th><td>About 2 hours</td></tr>
             <tr><th>Iterations</th><td>6 versions</td></tr>
             <tr><th>Overall size</th><td>127 × 175 × 70 mm</td></tr>
           </table>
@@ -194,10 +194,10 @@
           <span class="eyebrow">Capabilities</span>
           <h3>What it can do</h3>
           <ul class="checklist">
-                        <li>Secures and routes CPAP tubing</li>
-            <li>Eliminated tubing interference</li>
-            <li>Improved ease of use</li>
-            <li>Includes a thinner travel version</li>
+                        <li>Holds the CPAP tubing out of the way</li>
+            <li>The tubing doesn't get in the way anymore</li>
+            <li>Makes the machine easier to use</li>
+            <li>Has a thinner version for travel</li>
           </ul>
         </div>
       </div>
@@ -211,7 +211,7 @@
         <div class="panel reveal">
           <span class="eyebrow">Reflection</span>
           <h2>What I learned</h2>
-                    <p>Six versions taught me that good design comes from testing on the real thing. Each print showed me something a measurement alone didn't, like how tightly the hook needed to grip or how much clearance the soft tubing needed. It also showed me the value of designing for the user: the travel version came from thinking about how the bracket would really be used.</p>
+                    <p>It took six versions to get this right. Printing each one and testing it on the real headboard showed me what to fix next. The travel version only happened because I thought about how it would actually get used.</p>
         </div>
       </div>
     </section>
